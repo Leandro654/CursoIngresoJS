@@ -1,6 +1,11 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	let numRandom;
 
-}//FIN DE LA FUNCIÓN
+	/*con la funcion Math.floor convierto los numeros randoms que crea Math.random 
+	en enteros*/  
+	numRandom= Math.floor(Math.random() * 11);
+	if (numRandom>=1 && numRandom<=10) {
+		alert(numRandom);
+	}
+}
